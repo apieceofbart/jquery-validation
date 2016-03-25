@@ -1,3 +1,5 @@
+/*eslint no-console: 0*/
+
 $.extend( $.fn, {
 
 	// http://jqueryvalidation.org/validate/
