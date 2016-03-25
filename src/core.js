@@ -697,6 +697,12 @@ $.extend( $.validator, {
 				return val;
 			}
 
+			/* webkit browsers trim the email field value, for consistency I do the same here */
+			
+			if (type === "email") {
+				return val.trim();
+			}
+
 			if ( typeof val === "string" ) {
 				return val.replace( /\r/g, "" );
 			}
